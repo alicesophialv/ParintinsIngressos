@@ -1,0 +1,413 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tipo",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "area",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tipoPreco",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "noite",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "lado",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "comprador",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "cpfComprador",
+						"type": "bytes32"
+					}
+				],
+				"name": "IngressoVendido",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_area",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tipoPreco",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_noite",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_lado",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_cpfComprador",
+						"type": "bytes32"
+					}
+				],
+				"name": "comprarAvulso",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_area",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tipoPreco",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lado",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_cpfComprador",
+						"type": "bytes32"
+					}
+				],
+				"name": "comprarPassaporte",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ingressoCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ingressos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "tipo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "area",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "tipoPreco",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "noite",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "lado",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "comprador",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "cpfComprador",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "ingressosPorCpf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "listarIngressos",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "tipo",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "area",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "tipoPreco",
+								"type": "string"
+							},
+							{
+								"internalType": "uint8",
+								"name": "noite",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "lado",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "comprador",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "cpfComprador",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct ParintinsIngressos.Ingresso[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "listarIngressosDisponiveis",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "tipos",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "areas",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tiposPreco",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "valores",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "precos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sacar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_tipo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_area",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tipoPreco",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_valor",
+						"type": "uint256"
+					}
+				],
+				"name": "setPreco",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ParintinsIngressos.sol": "ParintinsIngressos"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ParintinsIngressos.sol": {
+			"keccak256": "0x6a7a27126aef8a710b52fef5c32305782298cfb0cc3fc643b911dca8faba2e80",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a714693697632976b7f1ed87e72a9b3d40f1107185cac437b4ab8321982f1ba9",
+				"dweb:/ipfs/QmXFcFYBhrZ4AFtSfwaXEDvFUxr5K4k29vdPhp1S7s1Qef"
+			]
+		}
+	},
+	"version": 1
+}
