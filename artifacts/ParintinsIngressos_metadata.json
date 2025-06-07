@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.0+commit.c7dfd78e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -54,12 +54,6 @@
 						"internalType": "address",
 						"name": "comprador",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "bytes32",
-						"name": "cpfComprador",
-						"type": "bytes32"
 					}
 				],
 				"name": "IngressoVendido",
@@ -86,11 +80,6 @@
 						"internalType": "string",
 						"name": "_lado",
 						"type": "string"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "_cpfComprador",
-						"type": "bytes32"
 					}
 				],
 				"name": "comprarAvulso",
@@ -114,11 +103,6 @@
 						"internalType": "string",
 						"name": "_lado",
 						"type": "string"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "_cpfComprador",
-						"type": "bytes32"
 					}
 				],
 				"name": "comprarPassaporte",
@@ -183,30 +167,6 @@
 						"internalType": "address",
 						"name": "comprador",
 						"type": "address"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "cpfComprador",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"name": "ingressosPorCpf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -252,11 +212,6 @@
 								"internalType": "address",
 								"name": "comprador",
 								"type": "address"
-							},
-							{
-								"internalType": "bytes32",
-								"name": "cpfComprador",
-								"type": "bytes32"
 							}
 						],
 						"internalType": "struct ParintinsIngressos.Ingresso[]",
@@ -386,9 +341,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ParintinsIngressos.sol": "ParintinsIngressos"
+			"TesteParintinsIngressos.sol": "ParintinsIngressos"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -400,12 +355,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ParintinsIngressos.sol": {
-			"keccak256": "0x6a7a27126aef8a710b52fef5c32305782298cfb0cc3fc643b911dca8faba2e80",
+		"TesteParintinsIngressos.sol": {
+			"keccak256": "0x0ceee915a0f25a3f2c7457cb268c57082b7ddcd8fcc660151d5b05dfd8824033",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a714693697632976b7f1ed87e72a9b3d40f1107185cac437b4ab8321982f1ba9",
-				"dweb:/ipfs/QmXFcFYBhrZ4AFtSfwaXEDvFUxr5K4k29vdPhp1S7s1Qef"
+				"bzz-raw://8059c732ef9188dbfdba5923f7513d2ad294cc32e775367344f4cc619abf8abf",
+				"dweb:/ipfs/QmXgR9AaihiMjomHoUMqVAKcUGkMfUJRFR6SBERtwdkwbb"
 			]
 		}
 	},
